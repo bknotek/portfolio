@@ -361,7 +361,7 @@ function App() {
         <LogoContainer
           details="Hoover Overhead Doors"
           alt="Logo1"
-          colors={["#000000"]}
+          colors={["#ff6a06"]}
           imgSrc="logos/HooverOverheadDoor_logo.jpg"
         />
 
@@ -375,21 +375,21 @@ function App() {
         <LogoContainer
           details="GIT Financial Services"
           alt="Logo1"
-          colors={["#000000"]}
+          colors={["#e7cc75", "#ad7425", "#047968", "#43ba85"]}
           imgSrc="logos/GITFinancialServices_logo.jpg"
         />
 
         <LogoContainer
           details="Nancy's Nail Salon & Spa"
           alt="Logo1"
-          colors={["#000000"]}
+          colors={["#8c6eae", "#e9bd72"]}
           imgSrc="logos/NancysNailSalonSpa_logo.jpg"
         />
 
         <LogoContainer
           details="Niz Tree Services Corp"
           alt="Logo1"
-          colors={["#000000"]}
+          colors={["#019245", "#fdee21"]}
           imgSrc="logos/NizTreeServicesCorp_logo.jpg"
         />
       </LogoSection>
