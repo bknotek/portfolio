@@ -357,6 +357,41 @@ function App() {
           colors={["#000000"]}
           imgSrc="logos/TritonTreats_logo.jpg"
         />
+
+        <LogoContainer
+          details="Hoover Overhead Doors"
+          alt="Logo1"
+          colors={["#000000"]}
+          imgSrc="logos/HooverOverheadDoor_logo.jpg"
+        />
+
+        <LogoContainer
+          details="Dee Moore Salon"
+          alt="Logo1"
+          colors={["#000000"]}
+          imgSrc="logos/DeeMooreSalon_logo.jpg"
+        />
+
+        <LogoContainer
+          details="GIT Financial Services"
+          alt="Logo1"
+          colors={["#000000"]}
+          imgSrc="logos/GITFinancialServices_logo.jpg"
+        />
+
+        <LogoContainer
+          details="Nancy's Nail Salon & Spa"
+          alt="Logo1"
+          colors={["#000000"]}
+          imgSrc="logos/NancysNailSalonSpa_logo.jpg"
+        />
+
+        <LogoContainer
+          details="Niz Tree Services Corp"
+          alt="Logo1"
+          colors={["#000000"]}
+          imgSrc="logos/NizTreeServicesCorp_logo.jpg"
+        />
       </LogoSection>
       <SitesSections>
         <SitesContainer
