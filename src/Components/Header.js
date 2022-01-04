@@ -125,7 +125,7 @@ const Header = () => {
         <a href="mailto: knotek27@yahoo.com">E-MAIL</a>
       </LinksDiv>
       <NameDiv>
-        <img src="NAME-ICON.png" alt="Top Name Icon" />
+        <img src="bk-portfolio/build/mstile-150x150.png" alt="Top Name Icon" />
       </NameDiv>
       <NavBar>
         <LogosLink>LOGOS</LogosLink>

@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./App.css";
 import LogoContainer from "./Components/LogoContainer.js";
 import SitesContainer from "./Components/SitesContainer.js";
-import Footer from "./Components/Footer.js";
+import VideosContainer from "./Components/VideosContainer.js";
 import styled from "@emotion/styled";
 
 function App() {
@@ -11,6 +11,10 @@ function App() {
     underline: "underline",
   });
   const [SiteSectionDiv, setSiteSectionDiv] = useState({
+    display: "none",
+    underline: "none",
+  });
+  const [VideoSectionDiv, setVideoSectionDiv] = useState({
     display: "none",
     underline: "none",
   });
@@ -96,6 +100,23 @@ function App() {
     }
   `;
 
+  const VideosLink = styled.li`
+    color: black;
+    cursor: pointer;
+    margin: 0px;
+    justify-content: space-evenly;
+    justify-content: center;
+    text-decoration: ${VideoSectionDiv.underline};
+    text-decoration-thickness: 6px;
+    text-decoration-color: #c3f400;
+    font-weight: 500;
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: #c3f400;
+      text-decoration-thickness: 6px;
+    }
+  `;
+
   const ResumeDiv = styled.div`
     position: absolute;
     width: 90px;
@@ -165,6 +186,18 @@ function App() {
     }
   `;
 
+  const VideosSections = styled.div`
+    width: 90%;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 250px;
+    display: ${VideoSectionDiv.display};
+    @media (max-width: 620px) {
+      padding-top: 210px;
+    }
+  `;
+
   const FooterDiv = styled.div`
     width: 100%;
     height: 50px;
@@ -188,6 +221,10 @@ function App() {
       display: "none",
       underline: "none",
     });
+    setVideoSectionDiv({
+      display: "none",
+      underline: "none",
+    });
   }
 
   function setSiteSection() {
@@ -195,7 +232,26 @@ function App() {
       display: "none",
       underline: "none",
     });
+    setVideoSectionDiv({
+      display: "none",
+      underline: "none",
+    });
     setSiteSectionDiv({
+      display: "display",
+      underline: "underline",
+    });
+  }
+
+  function setVideoSection() {
+    setLogoSectionDiv({
+      display: "none",
+      underline: "none",
+    });
+    setSiteSectionDiv({
+      display: "none",
+      underline: "none",
+    });
+    setVideoSectionDiv({
       display: "display",
       underline: "underline",
     });
@@ -222,6 +278,7 @@ function App() {
         <NavBar>
           <LogosLink onClick={setLogoSection}>LOGOS</LogosLink>
           <SitesLink onClick={setSiteSection}>SITES</SitesLink>
+          <VideosLink onClick={setVideoSection}>VIDEOS</VideosLink>
         </NavBar>
       </HeaderDiv>
       <LogoSection>
@@ -405,6 +462,17 @@ function App() {
           link="https://sportsworlduniforms.com/sports-home/"
         ></SitesContainer>
       </SitesSections>
+      <VideosSections>
+        {" "}
+        <VideosContainer
+          title="ONTRACK"
+          info="App Commercial"
+        ></VideosContainer>
+        <VideosContainer
+          title="ONTRACK"
+          info="App Commercial"
+        ></VideosContainer>
+      </VideosSections>
       <FooterDiv>
         <p>Brandon Knotek 2021</p>
       </FooterDiv>
