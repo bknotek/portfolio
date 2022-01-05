@@ -467,10 +467,12 @@ function App() {
         <VideosContainer
           title="ONTRACK"
           info="App Commercial"
+          videoSrc="https://drive.google.com/file/d/1zXy86cD-puVn0AeMwTbsBAyCCLUC-8YH/preview"
         ></VideosContainer>
         <VideosContainer
-          title="ONTRACK"
-          info="App Commercial"
+          title="Ivan 'Pudge Rodriguez'"
+          info="Highlight Video"
+          videoSrc="https://drive.google.com/file/d/1QQlG_byYN66djdhQz8D8t_XOme1yhu-0/preview"
         ></VideosContainer>
       </VideosSections>
       <FooterDiv>

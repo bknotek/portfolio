@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 
 const VideosContainer = ({ videoSrc, title, info }) => {
   const Container = styled.div`
-    width: 550px;
+    width: 650px;
     height: 400px;
     background-color: white;
     border: solid black 4px;
@@ -72,9 +72,14 @@ const VideosContainer = ({ videoSrc, title, info }) => {
   return (
     <Container>
       <SiteImgDiv>
-        <video width="100%" height="100%" controls>
-          <source src="build/videos/OnTrack.mp4" type="video/mp4" />
-        </video>
+        <iframe
+          src={videoSrc}
+          width="100%"
+          height="100%"
+          allow="autoplay"
+          allowfullscreen="true"
+          frameborder="0"
+        ></iframe>
       </SiteImgDiv>
       <InfoDiv>
         <p>{title}</p>
