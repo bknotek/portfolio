@@ -454,7 +454,7 @@ function App() {
         <SitesContainer
           imgSrc="sites/HillsHomeInspection_Site.jpg"
           software="React App"
-          link="http://hillshomeinspections.com/"
+          link="https://bknotek.github.io/CHillHomeInspections/"
         ></SitesContainer>
         <SitesContainer
           imgSrc="sites/SportsWorld_Site.jpg"
