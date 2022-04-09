@@ -476,7 +476,7 @@ function App() {
         ></VideosContainer>
       </VideosSections>
       <FooterDiv>
-        <p>Brandon Knotek 2021</p>
+        <p>Brandon Knotek 2022</p>
       </FooterDiv>
     </MainContainer>
   );
