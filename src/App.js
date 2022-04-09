@@ -7,12 +7,12 @@ import styled from "@emotion/styled";
 
 function App() {
   const [LogoSectionDiv, setLogoSectionDiv] = useState({
-    display: "visible",
-    underline: "underline",
-  });
-  const [SiteSectionDiv, setSiteSectionDiv] = useState({
     display: "none",
     underline: "none",
+  });
+  const [SiteSectionDiv, setSiteSectionDiv] = useState({
+    display: "visible",
+    underline: "underline",
   });
   const [VideoSectionDiv, setVideoSectionDiv] = useState({
     display: "none",
@@ -262,7 +262,7 @@ function App() {
       <HeaderDiv>
         <ResumeDiv>
           <a
-            href="https://pdfhost.io/v/1X7ia0nea_RESUME_001.pdf
+            href="https://pdfhost.io/v/7wuZtZf68_BKRESUME4
           "
             target="blank"
           >
@@ -276,8 +276,8 @@ function App() {
           <img src="NAME-ICON.png" alt="Top Name Icon" />
         </NameDiv>
         <NavBar>
-          <LogosLink onClick={setLogoSection}>LOGOS</LogosLink>
           <SitesLink onClick={setSiteSection}>SITES</SitesLink>
+          <LogosLink onClick={setLogoSection}>LOGOS</LogosLink>
           <VideosLink onClick={setVideoSection}>VIDEOS</VideosLink>
         </NavBar>
       </HeaderDiv>
